@@ -126,7 +126,7 @@ def analyze_with_gemini(resume_text: str, job_description: str, api_key: str) ->
 
     # Call the Gemini model
     response = client.models.generate_content(
-        model="gemini-2.0-flash",          # Model to use
+        model="gemini-3.5-flash",          # Model to use
         contents=prompt,                    # The full prompt text
         config=types.GenerateContentConfig(
             temperature=0.3,               # Lower = more consistent/deterministic
